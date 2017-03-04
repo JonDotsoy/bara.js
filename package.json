@@ -1,0 +1,39 @@
+{
+  "name": "bara",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "bootstrap/serve.js",
+  "engine": {
+    "node": ">= 7.6.0"
+  },
+  "scripts": {
+    "compose": "docker-compose -f .compose.yml",
+    "watch": "nodemon --harmony-async-await -w app .",
+    "gulp": "node --harmony-async-await -r ./.gulp.js .gulp-cli.js",
+    "test": "mocha --harmony-async-await -w"
+  },
+  "keywords": [],
+  "author": "Jonathan Delgado <hi@jon.soy>",
+  "dependencies": {
+    "async-request": "^1.2.0",
+    "chalk": "^1.1.3",
+    "express": "^4.15.0",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "mongoose": "^4.8.5",
+    "request": "^2.79.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "optionalDependencies": {
+    "gulp-nodemon": "^2.2.1",
+    "nodemon": "^1.11.0"
+  }
+}
