@@ -1,0 +1,104 @@
+@import 'reset.css';
+@import 'material-colors/dist/colors.var.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px|Source+Code+Pro');
+
+html {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.presentation-header {
+  display: block;
+  width: 100%;
+  background-color: var(--md-deep-purple-600);
+  /* min-height: 100vh; */
+
+  .presentation-cover {
+    /* box-sizing: border-box; */
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    padding-top: 7em;
+    padding-bottom: 7em;
+
+    .presentation-titles {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+    }
+
+  }
+}
+
+.presentation-titles {
+  text-align: center;
+
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Slabo 27px', serif;
+    color: var(--md-white);
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+  }
+}
+
+
+.presentation-wrapper-terminal {
+  margin-top: 3em;
+}
+
+
+.presentation-terminal {
+  border-radius: 10px;
+  background-color: var(--md-white);
+  padding: 25px;
+  box-shadow:
+    0px 10px 30px color(var(--md-grey-900) alpha(.09)),
+    0px  5px 10px color(var(--md-grey-900) alpha(.2));
+
+  .presentation-inner-terminal {
+    box-shadow:
+      inset 0px   1px   0px color(var(--md-black)),
+      inset 0px   5px  10px color(var(--md-black) alpha(.09)),
+      inset 0px 2.5px   5px color(var(--md-black) alpha(.2));
+    background-color: color(var(--md-grey-900));
+    border-radius: 5px;
+    padding: 20px 15px;
+
+    .line {
+      /* padding: 5px 0; */
+    }
+
+    code {
+      color: var(--md-green-400);
+      font-family: 'Source Code Pro', monospace;
+      .symbol {
+        color: var(--md-green-700);
+      }
+    }
+
+    .-code-result {
+      code {
+        color: var(--md-green-700);
+      }
+    }
+  }
+}
+
+.animation-write-code {
+  .character {
+  }
+}
+

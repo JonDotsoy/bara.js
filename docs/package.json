@@ -1,9 +1,31 @@
 {
+  "engine": {
+    "node": ">= 7.6.0"
+  },
+  "scripts": {
+    "gulp": "node --harmony-async-await node_modules/gulp/bin/gulp --gulpfile ./.gulp.js",
+    "watch": "npm run gulp watch"
+  },
   "devDependencies": {
+    "babel-preset-latest": "^6.22.0",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-postcss": "^6.3.0",
-    "gulp-pug": "^3.2.0"
+    "gulp-pug": "^3.2.0",
+    "gulp-util": "^3.0.8",
+    "lodash": "^4.17.4",
+    "material-colors": "^1.2.5",
+    "postcss-cssnext": "^2.9.0",
+    "precss": "^1.4.0",
+    "reset.css": "^2.0.2"
+  },
+  "dependencies": {
+    "postcss-import": "^9.1.0"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   }
 }

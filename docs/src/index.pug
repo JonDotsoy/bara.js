@@ -1,0 +1,38 @@
+extends layout
+
+mixin lineResult(codeStr)
+  +lineCommand(codeStr, true)
+
+mixin lineCommand(codeStr, isResult=false, symbol=">")
+  -
+    var n = global.ncharactersprinting || 0
+    var nnext = (c=1) => (n += c, n)
+
+  div(class=isResult?'-code-result line':'line'): code
+    if !isResult
+      span.symbol= symbol
+    =" "
+    each character in codeStr
+      span.character= character
+
+block body
+  header.presentation-header
+    div.presentation-cover
+      hgroup.presentation-titles
+        h1 bert
+
+        if true
+          = " "
+          h2 A task manager inspired on Gulp.
+
+      div.presentation-wrapper-terminal
+        div.presentation-terminal
+          div.presentation-inner-terminal
+            div.animation-write-code
+              +lineCommand('bert')
+              +lineResult('hi, my name is bert.')
+              //- +lineCommand('bert ps')
+              //- +lineResult('bert ps')
+              //- +lineCommand('bert server')
+              //- +lineResult('http://localhost/ol')
+
