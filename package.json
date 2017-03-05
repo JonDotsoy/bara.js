@@ -11,7 +11,8 @@
     "compose": "docker-compose -f .compose.yml",
     "watch": "nodemon --harmony-async-await -w app .",
     "gulp": "node --harmony-async-await -r ./.gulp.js .gulp-cli.js",
-    "test": "mocha --harmony-async-await -w"
+    "test": "mocha --harmony-async-await",
+    "t": "mocha --harmony-async-await"
   },
   "keywords": [],
   "author": "Jonathan Delgado <hi@jon.soy>",
