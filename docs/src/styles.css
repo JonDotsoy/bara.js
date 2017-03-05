@@ -10,7 +10,7 @@ html {
 .presentation-header {
   display: block;
   width: 100%;
-  background-color: var(--md-deep-purple-600);
+  background-color: color(var(--md-deep-purple-600));
   /* min-height: 100vh; */
 
   .presentation-cover {
@@ -41,7 +41,7 @@ html {
   h5,
   h6 {
     font-family: 'Slabo 27px', serif;
-    color: var(--md-white);
+    color: color(var(--md-white));
   }
 
   h1 {
@@ -62,7 +62,7 @@ html {
 
 .presentation-terminal {
   border-radius: 10px;
-  background-color: var(--md-white);
+  background-color: color(var(--md-white));
   padding: 25px;
   box-shadow:
     0px 10px 30px color(var(--md-grey-900) alpha(.09)),

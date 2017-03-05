@@ -29,7 +29,7 @@
 }.presentation-header {
   display: block;
   width: 100%;
-  background-color: #5e35b1;
+  background-color: rgb(94, 53, 177);
 }/* min-height: 100vh; */.presentation-header .presentation-cover {/* box-sizing: border-box; */
 	max-width: 800px;
 	margin: auto;
@@ -44,7 +44,7 @@
   text-align: center;
 }.presentation-titles, .presentation-titles h1, .presentation-titles h2, .presentation-titles h3, .presentation-titles h4, .presentation-titles h5, .presentation-titles h6 {
 	font-family: 'Slabo 27px', serif;
-	color: #ffffff;
+	color: rgb(255, 255, 255);
 }.presentation-titles h1 {
 	font-size: 3em;
 }.presentation-titles h2 {
@@ -54,7 +54,7 @@
   margin-top: 3em;
 }.presentation-terminal {
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   padding: 25px;
   box-shadow: 0px 10px 30px rgba(33, 33, 33, .09),
     0px  5px 10px rgba(33, 33, 33, .2);
