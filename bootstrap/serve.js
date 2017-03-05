@@ -1,3 +1,5 @@
+require('dotenv').config({ silent: true })
+
 const express = require('express')
 const chalk = require('chalk')
 const url = require('url')
