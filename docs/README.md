@@ -1,4 +1,0 @@
-# BARA PROJECT
-
-A project.
-
