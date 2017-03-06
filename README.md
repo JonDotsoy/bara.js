@@ -21,7 +21,7 @@ Features:
 
 ### app/[feature]/router.js
 
-#### exports.router(): *Function*
+#### exports.router: *[Middleware][express-middleware]|[Router][express-router]*
 The general router to render by page.
 
 **Example:**
@@ -52,7 +52,7 @@ GET /api/hello
 </html>
 ```
 
-#### exports.api(): *Function*
+#### exports.api: *[Middleware][express-middleware]|[Router][express-router]*
 The router to api, use the base `/api`.
 
 **Example:**
@@ -82,4 +82,5 @@ GET /api/hello
 
 
 
-
+[express-middleware]: http://expressjs.com/en/api.html#middleware-callback-function-examples "Middleware callback function examples"
+[express-router]: http://expressjs.com/en/api.html#router "Router"
