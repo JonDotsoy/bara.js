@@ -17,7 +17,7 @@ function getMainPluginFromPkg (pkg) {
   return get(pkg, ['bert', 'mainPlugin'])
 }
 
-async function resolveMainPlugin (idResolve, { basedir = nameFunctionIsCall(2) } = {}) {
+async function resolvePlugin (idResolve, { basedir = nameFunctionIsCall(2) } = {}) {
   return new Promise((resolveAsync, reject) => {
     resolve(idResolve,
       {
@@ -51,7 +51,7 @@ async function scanPlugin (idResolve, {
   basedir = nameFunctionIsCall(2),
   setupName
 } = {}) {
-  const configPlugin = await resolveMainPlugin(idResolve, { basedir })
+  const configPlugin = await resolvePlugin(idResolve, { basedir })
 
   return new Plugin({
     source: require(configPlugin.mainFile),
@@ -81,6 +81,7 @@ function Plugin ({
 }
 
 exports = module.exports = Object.assign(Plugin, {
+  resolve: resolvePlugin,
   scanPlugin,
   scanPlugins,
   Plugin,
