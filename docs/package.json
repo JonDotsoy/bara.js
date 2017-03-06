@@ -4,6 +4,7 @@
   },
   "scripts": {
     "gulp": "node --harmony-async-await node_modules/gulp/bin/gulp --gulpfile ./.gulp.js",
+    "serve": "bundle exec jekyll serve",
     "watch": "npm run gulp watch"
   },
   "devDependencies": {

@@ -20,6 +20,7 @@ block body
     div.presentation-cover
       hgroup.presentation-titles
         h1 bert
+          != "{{ site.time | date_to_xmlschema }}"
 
         if true
           = " "
