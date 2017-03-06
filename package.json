@@ -2,7 +2,7 @@
   "name": "bara",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "A task manager inspired on Gulp.",
   "main": "bootstrap/serve.js",
   "engine": {
     "node": ">= 7.6.0"
