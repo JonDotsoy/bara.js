@@ -6,7 +6,7 @@ A task manager inspired on Gulp.
 ## On Develop
 
 Features:
-- [ ] Symstem
+- [ ] System
     - [x] Router
 - Task Control
 - Process manager
