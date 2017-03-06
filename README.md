@@ -9,6 +9,10 @@ Features:
 - [ ] System
     - [x] Router
 - [ ] Task Control
+    - [ ] New Task
+        - [ ] Relation with local folder
+    - [ ] Edit Task
+    - [ ] Show Status Task
 - [ ] Process manager
 
 
