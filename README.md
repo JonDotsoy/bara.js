@@ -19,7 +19,7 @@ Features:
             - [exports.router()](#exportsrouter-function): General router configuration.
             - [exports.api()](#exportsapi-function): Api router configuration.
 
-### app/[feature]/router.js
+### app/[feature]/router.js: [exports][node-modules] (Object)
 
 #### exports.router: (*[Middleware][express-middleware]|[Router][express-router]*)
 The general router to render by page.
@@ -84,3 +84,4 @@ GET /api/hello
 
 [express-middleware]: http://expressjs.com/en/api.html#middleware-callback-function-examples "Middleware callback function examples"
 [express-router]: http://expressjs.com/en/api.html#router "Router"
+[node-modules]: https://nodejs.org/api/modules.html "Modules"
