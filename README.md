@@ -1,6 +1,8 @@
 # 🍹 bert
 A task manager inspired on Gulp.
 
+![](https://media4.giphy.com/media/3o6Zteg4iAACKsh5sI/giphy.gif)
+
 ## On Develop
 
 Features:
