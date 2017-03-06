@@ -8,8 +8,8 @@ A task manager inspired on Gulp.
 Features:
 - [ ] System
     - [x] Router
-- Task Control
-- Process manager
+- [ ] Task Control
+- [ ] Process manager
 
 
 ## Framework
