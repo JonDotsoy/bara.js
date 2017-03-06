@@ -14,7 +14,7 @@ task('scripts', () =>
     console.error(err)
     this.emit('end')
   })
-  .pipe(dest('.'))
+  .pipe(dest('./assets'))
   .pipe(bs.stream())
 )
 
@@ -33,7 +33,7 @@ task('styles', () =>
     console.error(err)
     this.emit('end')
   })
-  .pipe(dest('.'))
+  .pipe(dest('./assets'))
   .pipe(bs.stream())
 )
 
@@ -48,7 +48,7 @@ task('templates', () =>
     console.error(err)
     this.emit('end')
   })
-  .pipe(dest('.'))
+  .pipe(dest('./_layouts'))
   .pipe(bs.stream())
 )
 
@@ -58,9 +58,7 @@ task('templates:watch', ['templates'], () => {
 
 task('browser-sync', ['scripts'], () => {
   bs.init({
-    server: {
-      baseDir: '.'
-    }
+    proxy: 'http://localhost:4000'
   })
 })
 
