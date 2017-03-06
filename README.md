@@ -6,11 +6,11 @@ A task manager inspired on Gulp.
 ## On Develop
 
 Features:
-- API Interfaces
-- Web Interfaces
-- Auth Manager (Credentials)
-- Plugin Support
-- Task Manager
+- [ ] Symstem
+    - [x] Router
+- Task Control
+- Process manager
+
 
 ## Framework
 **Estructure of directory by features.**
