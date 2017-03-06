@@ -14,9 +14,9 @@ Features:
 
 - app/
     - **[feature]**/
-        - router.js: The router configs
-            - [exports.router()](#exportsrouter-function)
-            - [exports.api()](#exportsapi-function)
+        - **router.js**: The router configs
+            - [exports.router()](#exportsrouter-function): General router configuration.
+            - [exports.api()](#exportsapi-function): Api router configuration.
 
 ### app/[feature]/router.js
 
