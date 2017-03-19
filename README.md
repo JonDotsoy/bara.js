@@ -6,6 +6,7 @@ A task manager inspired on Gulp.
 ## On Develop
 
 Features:
+- [CLI](https://github.com/JonDotsoy/bert-cli)
 - [ ] System
     - [x] Router
 - [ ] Task Control
